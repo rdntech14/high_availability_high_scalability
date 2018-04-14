@@ -2,6 +2,7 @@
 yum install -y httpd php php-mysql mysql
 service httpd start
 cd /var/www/html
+echo "this is my EC2" > index.html
 wget https://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz
 mv wordpress testwordpress

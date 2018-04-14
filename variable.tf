@@ -18,6 +18,23 @@ variable "azs" {
   description = "This is the list of subnets"
 }
 
-# Declare the data source
-#data "aws_availability_zones" "azs" {}
+variable "elb_zones" {
+  type        = "list"
+  default     = ["us-east-1a", "us-east-1b"]
+  description = "This is availability_zones assciate with ELB"
+}
 
+variable "lc_ami_image_id" {
+  default     = "ami-1853ac65"
+  description = "This is aws region name"
+}
+
+variable "lc_instance_type" {
+  default     = "t2.micro"
+  description = "This is instance type"
+}
+
+variable "lc_instance_key_pair" {
+  default     = "ec2_keyPair"
+  description = "This is instance key pair"
+}

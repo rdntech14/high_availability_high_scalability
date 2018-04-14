@@ -1,4 +1,10 @@
 #!/bin/bash
+# just for testing - to make sure it is working
+yum install -y httpd php php-mysql mysql
+service httpd start
+cd /var/www/html
+echo "this is my EC2" > index.html
+# Database script starts from here
 yum install -y mysql mysql-server
 service mysqld start
 yum install -y expect

@@ -12,8 +12,9 @@ ELB - 1 associate with 2 subnets - sg_elb
 Create Instance with DB script
 
 Task 1: Create 1 VPC and 3 subnets
-Task 2: create DB instance and get DP IP
+Task 2 : Create Internet Gateway and attach VPC
 Task 3: Create 3 Security Group ( 1- ELB, 1 - Web, 1-DB)
-Task 3: ELB - 1 associate with 2 subnets - sg_elb
-Task 3: Create 1 - Auto Scaling launch configuration for Web with Script Updated with DB ip
-Task 4: Create 1 - Auto Scaling Group associate with ELB for Web
+Task 4: Create DB instance in Subnet #3 and attach security group sg_db and get DB IP
+Task 5: ELB - 1 associate with subnet #1 & subnet #2 and security_group sg_elb
+Task 6: Create 1 - Auto Scaling launch configuration for Web with Script Updated with DB ip
+Task 7: Create 1 - Auto Scaling Group associate with ELB for Web
