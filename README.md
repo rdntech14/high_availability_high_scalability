@@ -1,10 +1,11 @@
-This creates high availability & high scalable
-VPC - 1
-Subnet - 3
+Purpose : To create high availability & high scalable system with 
 
-DB - 1 subnet ( private) - sg_db
-2 - web server subnet ( public) - sg_web
-ELB - 1 associate with 2 subnets - sg_elb
+VPC - 1
+
+Subnet - 3
+(DB - 1 subnet ( private) - sg_db, 
+2 - web server subnet ( public) - sg_web, 
+ELB - 1 associate with 2 subnets - sg_elb )
 
 1 - Auto Scaling launch configuration for Web
 1 - Auto Scaling Group associate with ELB for Web
